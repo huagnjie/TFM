@@ -1,0 +1,8 @@
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\bin\Release\Models.dll
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\bin\Release\Models.pdb
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\obj\Release\Models.dll
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\obj\Release\Models.pdb
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\bin\Release\Models.dll
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\bin\Release\Models.pdb
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\obj\Release\Models.dll
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\Models\obj\Release\Models.pdb

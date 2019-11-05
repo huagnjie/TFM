@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42C7D8DC-6A0D-4E7E-8312-E8254D3656D3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TFMSchoolDeal</RootNamespace>
+    <AssemblyName>TFMSchoolDeal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="Admin.aspx" />
+    <Content Include="Check.aspx" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carts.css" />
+    <Content Include="Content\demo.css" />
+    <Content Include="Content\Details.css" />
+    <Content Include="Content\DinBinDCss.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\jdc-side-panel.css" />
+    <Content Include="Content\LRDefaultCss.css" />
+    <Content Include="Content\MasterPage.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\reset.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\zzsc.css" />
+    <Content Include="css\bksystem.css" />
+    <Content Include="css\ContextMenu.css" />
+    <Content Include="css\iconfont.css" />
+    <Content Include="css\loaders.css" />
+    <Content Include="css\module.css" />
+    <Content Include="css\pages.css" />
+    <Content Include="css\PersonalCenter.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\stylees.css" />
+    <Content Include="css\YuoInfo.css" />
+    <Content Include="Details.aspx" />
+    <Content Include="FinBinGinZin.aspx" />
+    <Content Include="FinBinShopping.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="font\iconfont.css" />
+    <Content Include="font\iconfont.js" />
+    <Content Include="font\iconfont.svg" />
+    <Content Include="Frame\Bottom.aspx" />
+    <Content Include="Frame\LeftFrame.aspx" />
+    <Content Include="Frame\MainFrame.aspx" />
+    <Content Include="Frame\TopFrame.aspx" />
+    <Content Include="GeRen.aspx" />
+    <Content Include="iconfont\blacklist.aspx" />
+    <Content Include="iconfont\goods_fenlei.aspx" />
+    <Content Include="iconfont\goods_table.aspx" />
+    <Content Include="iconfont\information_trade.aspx" />
+    <Content Include="iconfont\order_status.aspx" />
+    <Content Include="iconfont\userinfo.aspx" />
+    <Content Include="iconfont\users.aspx" />
+    <Content Include="Images\002.jpg" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\1001.jpg" />
+    <Content Include="Images\1002.jpg" />
+    <Content Include="Images\1003.jpg" />
+    <Content Include="Images\1004.jpg" />
+    <Content Include="Images\1005.jpg" />
+    <Content Include="Images\1006.jpg" />
+    <Content Include="Images\1007.jpg" />
+    <Content Include="Images\1008.jpg" />
+    <Content Include="Images\19031.jpg" />
+    <Content Include="Images\19032.jpg" />
+    <Content Include="Images\19033.jpg" />
+    <Content Include="Images\19034.jpg" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\400001.jpg" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\banic.png" />
+    <Content Include="Images\cart\ass.jpg" />
+    <Content Include="Images\cart\cft.jpg" />
+    <Content Include="Images\cart\fk.jpg" />
+    <Content Include="Images\cart\g1.jpg" />
+    <Content Include="Images\cart\gdbank.jpg" />
+    <Content Include="Images\cart\helpicon.jpg" />
+    <Content Include="Images\cart\ie.jpg" />
+    <Content Include="Images\cart\item1.jpg" />
+    <Content Include="Images\cart\item2.jpg" />
+    <Content Include="Images\cart\jhbank.jpg" />
+    <Content Include="Images\cart\jt1.jpg" />
+    <Content Include="Images\cart\jt2.jpg" />
+    <Content Include="Images\cart\jtbank.jpg" />
+    <Content Include="Images\cart\nybank.jpg" />
+    <Content Include="Images\cart\step1.jpg" />
+    <Content Include="Images\cart\step2.jpg" />
+    <Content Include="Images\cart\tj.png" />
+    <Content Include="Images\cart\view1.jpg" />
+    <Content Include="Images\cart\view2.jpg" />
+    <Content Include="Images\cart\view3.jpg" />
+    <Content Include="Images\cart\view4.jpg" />
+    <Content Include="Images\cart\warn.jpg" />
+    <Content Include="Images\cart\xybank.jpg" />
+    <Content Include="Images\cart\zfb.jpg" />
+    <Content Include="Images\cart\zgbank.jpg" />
+    <Content Include="Images\cart\zsbank.jpg" />
+    <Content Include="Images\d.jpg" />
+    <Content Include="Images\GinXin.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo11.png" />
+    <Content Include="Images\mark.png" />
+    <Content Include="Images\MDMJY.png" />
+    <Content Include="Images\Money.png" />
+    <Content Include="Images\no_doc.jpg" />
+    <Content Include="Images\proddetlIcon.gif" />
+    <Content Include="Images\qrcode.jpg" />
+    <Content Include="Images\qr_img.png" />
+    <Content Include="Images\reg_bg.jpg" />
+    <Content Include="Images\XXJY.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\BKframe.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\css3-mediaqueries.js" />
+    <Content Include="js\dist\chart\bar.js" />
+    <Content Include="js\dist\chart\chord.js" />
+    <Content Include="js\dist\chart\eventRiver.js" />
+    <Content Include="js\dist\chart\force.js" />
+    <Content Include="js\dist\chart\funnel.js" />
+    <Content Include="js\dist\chart\gauge.js" />
+    <Content Include="js\dist\chart\heatmap.js" />
+    <Content Include="js\dist\chart\k.js" />
+    <Content Include="js\dist\chart\line.js" />
+    <Content Include="js\dist\chart\map.js" />
+    <Content Include="js\dist\chart\pie.js" />
+    <Content Include="js\dist\chart\radar.js" />
+    <Content Include="js\dist\chart\scatter.js" />
+    <Content Include="js\dist\chart\tree.js" />
+    <Content Include="js\dist\chart\treemap.js" />
+    <Content Include="js\dist\chart\venn.js" />
+    <Content Include="js\dist\chart\wordCloud.js" />
+    <Content Include="js\dist\echarts-all.js" />
+    <Content Include="js\dist\echarts.js" />
+    <Content Include="js\dist\theme\default.js" />
+    <Content Include="js\dist\theme\infographic.js" />
+    <Content Include="js\dist\theme\macarons.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\HUpages.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-3.3.1.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.nicescroll.js" />
+    <Content Include="js\jquery.scrollbar.min.js" />
+    <Content Include="js\layer\extend\layer.ext.js" />
+    <Content Include="js\layer\layer.js" />
+    <Content Include="js\layer\skin\default\icon-ext.png" />
+    <Content Include="js\layer\skin\default\icon.png" />
+    <Content Include="js\layer\skin\default\loading-0.gif" />
+    <Content Include="js\layer\skin\default\loading-1.gif" />
+    <Content Include="js\layer\skin\default\loading-2.gif" />
+    <Content Include="js\layer\skin\layer.css" />
+    <Content Include="js\layer\skin\layer.ext.css" />
+    <Content Include="js\template.js" />
+    <Content Include="LRDefault.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Product.aspx" />
+    <Content Include="Product\Bangzhu.aspx" />
+    <Content Include="Product\GeRenInfo.aspx" />
+    <Content Include="Product\Login.aspx" />
+    <Content Include="Product\PersonalData.aspx" />
+    <Content Include="Product\PersonalOrder.aspx" />
+    <Content Include="Product\Replay.aspx" />
+    <Content Include="Scripts\carts.js" />
+    <Content Include="Scripts\IndexCon.js" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\LRDefaultJs.js" />
+    <Content Include="Shopping.aspx" />
+    <Content Include="skin\black\skin.css" />
+    <Content Include="skin\blue\skin.css" />
+    <Content Include="skin\gray\skin.css" />
+    <Content Include="skin\green\skin.css" />
+    <Content Include="skin\purple\skin.css" />
+    <Content Include="skin\red\skin.css" />
+    <Content Include="skin\white\skin.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="Check.aspx.cs">
+      <DependentUpon>Check.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Check.aspx.designer.cs">
+      <DependentUpon>Check.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinBinGinZin.aspx.cs">
+      <DependentUpon>FinBinGinZin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinBinGinZin.aspx.designer.cs">
+      <DependentUpon>FinBinGinZin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinBinShopping.aspx.cs">
+      <DependentUpon>FinBinShopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinBinShopping.aspx.designer.cs">
+      <DependentUpon>FinBinShopping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\Bottom.aspx.cs">
+      <DependentUpon>Bottom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\Bottom.aspx.designer.cs">
+      <DependentUpon>Bottom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.designer.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.designer.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\TopFrame.aspx.cs">
+      <DependentUpon>TopFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\TopFrame.aspx.designer.cs">
+      <DependentUpon>TopFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeRen.aspx.cs">
+      <DependentUpon>GeRen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeRen.aspx.designer.cs">
+      <DependentUpon>GeRen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\blacklist.aspx.cs">
+      <DependentUpon>blacklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\blacklist.aspx.designer.cs">
+      <DependentUpon>blacklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\goods_fenlei.aspx.cs">
+      <DependentUpon>goods_fenlei.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\goods_fenlei.aspx.designer.cs">
+      <DependentUpon>goods_fenlei.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\goods_table.aspx.cs">
+      <DependentUpon>goods_table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\goods_table.aspx.designer.cs">
+      <DependentUpon>goods_table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\information_trade.aspx.cs">
+      <DependentUpon>information_trade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\information_trade.aspx.designer.cs">
+      <DependentUpon>information_trade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\order_status.aspx.cs">
+      <DependentUpon>order_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\order_status.aspx.designer.cs">
+      <DependentUpon>order_status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iconfont\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iconfont\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LRDefault.aspx.cs">
+      <DependentUpon>LRDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LRDefault.aspx.designer.cs">
+      <DependentUpon>LRDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Bangzhu.aspx.cs">
+      <DependentUpon>Bangzhu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Bangzhu.aspx.designer.cs">
+      <DependentUpon>Bangzhu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\GeRenInfo.aspx.cs">
+      <DependentUpon>GeRenInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\GeRenInfo.aspx.designer.cs">
+      <DependentUpon>GeRenInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\PersonalData.aspx.cs">
+      <DependentUpon>PersonalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PersonalData.aspx.designer.cs">
+      <DependentUpon>PersonalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\PersonalOrder.aspx.cs">
+      <DependentUpon>PersonalOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\PersonalOrder.aspx.designer.cs">
+      <DependentUpon>PersonalOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Replay.aspx.cs">
+      <DependentUpon>Replay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Replay.aspx.designer.cs">
+      <DependentUpon>Replay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shopping.aspx.cs">
+      <DependentUpon>Shopping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shopping.aspx.designer.cs">
+      <DependentUpon>Shopping.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage.master" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Images\cart\Thumbs.db" />
+    <Content Include="fonts\jdcfont.eot" />
+    <Content Include="fonts\jdcfont.ttf" />
+    <Content Include="fonts\jdcfont.woff" />
+    <Content Include="font\iconfont.eot" />
+    <Content Include="font\iconfont.ttf" />
+    <Content Include="font\iconfont.woff" />
+    <None Include="Properties\PublishProfiles\IISConfigWeb.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{a8a2c9fc-69bd-4432-99c0-4a6edb10dbac}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{90043ac9-c179-43c2-bc2f-4ffdc0ccc926}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59650/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

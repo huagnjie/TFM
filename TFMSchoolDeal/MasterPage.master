@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"  Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="校园交易网是集合全国所有高校，包含关于大学生全部商品交易信息的大型综合媒体平台，是一个属于大学生自己的综合信息网站" />
+    <meta name="keywords" content="校园交易网,高校交易平台,全国高校交易网,大学生交易网,大学生交易平台,各大高校交易网,校园跳蚤市场,大学生跳蚤市场,校园二手,大学二手,大学生二手平台,校园交易,校园TFM,TFM校园,校园,交易网,学生交易网,校内交易,校园交易商城,校园二手街" />
+    <title>TFM校园网</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/MasterPage.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/IndexCon.js"></script>
+    <link href="css/ContextMenu.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function PassWord(en, obj) {
+            var a = obj;
+            if (a.value == en) {
+                a.value = "";
+            }
+            if (en == "password") {
+                a.type = "password";
+            }
+        }
+        function NoPassWord(en, obj) {
+            var a = obj;
+            if (a.value.length <= 0) {
+                a.value = en;
+                a.type = "text";                
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+        <ul class="contextmenu">
+            <li><a href="Index.aspx?Indexppp=1">主页</a></li>
+            <li><a href="Product.aspx?Shopping=0">闲置商品</a></li>
+            <li><a href="Product.aspx?Shopping=3">手机专场</a></li>
+            <li><a href="Product.aspx?Shopping=4">电脑专场</a></li>
+            <li><a href="Product.aspx?Shopping=8">日用百货</a></li>
+        </ul>
+
+        <div id="top">
+            <div id="header_top_box">
+                <div id="header_top">
+                    <ul>
+                        <li class="city"><span class="tel">永州单木不林信息科技有限公司 &nbsp;&nbsp;旗下网站  &nbsp;&nbsp; 全国统一客服热线：<a style="color: red;">15773933242</a></span>
+                        </li>
+                        <li class="header_top_menu  dlzc">你好,请 &nbsp; <a href="LRDefault.aspx">[登陆]</a>&nbsp;|&nbsp;
+                        </li>
+                        <li class="header_top_menu dlzc">
+                            <%--需要传递参数让注册页面出现--%>
+                            <a href="LRDefault.aspx?ZinCin=1">[注册]</a>
+                        </li>
+                        <li class="header_top_menu yhm">
+                            <a href="GeRen.aspx">
+                                <asp:Label runat="server" ID="lbl_Name" Text="用户名"></asp:Label></a>
+                            <a href="FinBinShopping.aspx" style="margin-left: 20px;">发布商品</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="header_banner">
+                <ul>
+                    <li class="logo">
+                        <img src="Images/logo.png" style="width: 140px;" /></li>
+                    <li class="se">
+                        <div id="searchdiv" class="search d7">
+                            <div id="search_form">
+                                <%--<input type="text" placeholder="搜索从这里开始..."/>--%>
+                                <asp:TextBox  ID="search_text" placeholder="搜索从这里开始..."  OnTextChanged="search_text_TextChanged" runat="server"></asp:TextBox>
+                                <button type="submit" id="search_button"   runat="server" > 
+                                    <asp:Label runat="server" Text="" display="none"></asp:Label></button>
+                                <%--<asp:Button runat="server" ID="search_button" />--%>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="header_banner_menu">
+                        <a href="#">手机版
+                        </a>
+                    </li>
+                    <li class="header_banner_menu">
+                        <a href="#">APP下载
+                        </a>
+                    </li>
+                    <li class="header_banner_menu">
+                        <a href="#">关注我们
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="nav_box">
+                <div id="nav">
+                    <ul>
+                        <li class="lihoves Indexppp"><a href="Index.aspx?Indexppp=1">主页</a></li>
+
+                        <li class="lihoves XinZinShopping"><a href="Product.aspx?Shopping=0">闲置商品</a></li>
+
+                        <li class="lihoves"><a href="#">校园论坛</a></li>
+
+                        <li id="right_li">
+                            <a href="FinBinGinZin.aspx">商品发布规则</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="copyright ">
+            <div class="container">
+
+                <div class="content center">
+                    <div class="client">
+
+                        <div class="hd">
+                            Copyright © 2015-2016 All Rights Reserved 校园交易网 版权所有&nbsp;&nbsp; 备案号:<a href=" http://www.miitbeian.gov.cn" target="_blank" style="color: #000;"> 湘ICP备:16000670号</a> &nbsp;&nbsp; 联系邮箱: 1341951524@qq.com &nbsp;&nbsp; 永州单木不林信息科技有限公司 运营管理  
+
+
+
+                            <script>
+                                var _hmt = _hmt || [];
+                                (function () {
+                                    var hm = document.createElement("script");
+                                    hm.src = "//hm.baidu.com/hm.js?9d0fc2ce06ec9bc6b2377b2787162de0";
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(hm, s);
+                                })();
+                            </script>
+                        </div>
+
+                        <div style="width: 300px; margin: 0 auto; padding: 10px 0;">
+                            <a style="display: inline-block; text-decoration: none; height: 20px; line-height: 20px;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=45010202000090" target="_blank">
+                                <img src="Images/banic.png" style="float: left;" /><p style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">桂公网安备 45010202000090号</p>
+                            </a>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <link href="Content/DinBinDCss.css" rel="stylesheet" />
+        <link href="Content/jdc-side-panel.css" rel="stylesheet" />
+        <div id="DinDinDiv">
+            <div class="jdc-side" style="display: block;" id="jdc_sides">
+                <div class="mod_hang_qrcode jdc_hang_qrcode">
+                    <a class="mod_hang_qrcode_btn"><i class="jdcfont"></i><span>扫码关注</span></a>
+                    <div class="mod_hang_qrcode_show">
+                        <div class="mod_hang_qrcode_show_bg"></div>
+                        <p>单木不林微信公众号</p>
+                    </div>
+                </div>
+                <div class="mod_hang_qrcode mod_hang_top"><a href="javascript:void(0);" class="mod_hang_qrcode_btn" id="DinBin_A"><i class="jdcfont"></i><span>返回顶部</span></a></div>
+            </div>
+        </div>
+        <script src="Scripts/jquery-1.7.1.js"></script>
+        <script type="text/javascript">
+            $('#DinBin_A').bind('click', function () { $(window).scrollTop(0); });
+        </script>
+    </form>
+
+</body>
+</html>

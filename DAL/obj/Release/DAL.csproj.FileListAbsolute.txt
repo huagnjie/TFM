@@ -1,0 +1,14 @@
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\DAL.dll
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\DAL.pdb
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\Models.dll
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\Models.pdb
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.dll
+H:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.pdb
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\DAL.dll
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\DAL.pdb
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\Models.dll
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\bin\Release\Models.pdb
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.dll
+D:\卓越项目\TFM校园网\1712-01\1712-01\trunk\document\5.项目源码\TFMSchoolDeal\DAL\obj\Release\DAL.pdb

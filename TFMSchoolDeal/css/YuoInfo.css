@@ -1,0 +1,35 @@
+﻿*{
+    margin:0px;
+    padding :0px;
+    list-style-type:none;
+    text-decoration:none;
+}
+br { 
+    color:#808080;
+}
+#box { 
+    width:600px;
+    height:480px;
+    background-color:#fff;
+    margin-top:-50px;
+    margin-left:200px;
+
+}
+p { 
+    font-size:15px;
+    margin-left:40px;
+    margin-top:10px;
+
+}
+i { 
+    font-size:10px;
+    color:#808080;
+}
+table { 
+    margin-left:140px;
+    height:300px;
+}
+ #XianxiInfo   table td { 
+        text-align:right;
+
+    }

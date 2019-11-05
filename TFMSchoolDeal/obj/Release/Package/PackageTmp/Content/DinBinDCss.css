@@ -1,0 +1,18 @@
+﻿@charset "UTF-8";
+
+l#DinDinDiv  i { list-style: none }
+#DinDinDiv h1, h2, h3, h4, h5, h6, small { font-size: 100% }
+#DinDinDiv sub, sup { font-size: 83% }
+#DinDinDiv code, kbd, pre, samp { font-family: inherit }
+#DinDinDiv q:after, q:before { content: none }
+#DinDinDiv  textarea { overflow: auto; resize: none }
+#DinDinDiv label, summary { cursor: default }
+#DinDinDiv  a, button { cursor: pointer }
+#DinDinDiv  b, em, h1, h2, h3, h4, h5, h6, strong { font-weight: 700 }
+#DinDinDiv a, a:hover, del, ins, s, u { text-decoration: none }
+#DinDinDiv  body, button, input, keygen, legend, select, textarea { font: 14px/1.5 PingFangSC, 'helvetica neue', 'hiragino sans gb', 'Segoe UI', Calibri, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif; color: #333; outline: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
+input[type=text] { -webkit-appearance: none; border-radius: 0 }
+
+@font-face { font-family: jdcfont; src: url(../fonts/jdcfont.eot); src: url(../fonts/jdcfont.eot#iefix) format("embedded-opentype"), url(../fonts/jdcfont.woff) format("woff"), url(../fonts/jdcfont.ttf) format("truetype"), url(../fonts/jdcfont.svg#jdcfont) format("svg") }
+.jdcfont { font-family: jdcfont!important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: .2px; -moz-osx-font-smoothing: grayscale }
+

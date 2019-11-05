@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="404.html">
+      <publishTime>04/03/2019 19:51:04</publishTime>
+    </File>
+    <File Include="Admin.aspx">
+      <publishTime>05/23/2019 15:19:16</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>03/25/2019 14:42:38</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>03/25/2019 14:42:40</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.UI.Combined.dll">
+      <publishTime>03/25/2019 14:42:40</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>10/12/2019 17:38:50</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>10/12/2019 17:38:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.AspNet.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.Core.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.Consumer.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OAuth.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/DotNetOpenAuth.OpenId.RelyingParty.dll">
+      <publishTime>03/25/2019 14:42:44</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/25/2019 14:42:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Membership.OpenAuth.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>03/25/2019 14:42:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>03/25/2019 14:42:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/25/2019 14:42:42</publishTime>
+    </File>
+    <File Include="bin/Models.dll">
+      <publishTime>10/12/2019 17:38:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>03/25/2019 14:42:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>03/25/2019 14:42:38</publishTime>
+    </File>
+    <File Include="bin/TFMSchoolDeal.dll">
+      <publishTime>10/12/2019 17:38:58</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>03/25/2019 14:42:38</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/EntityFramework.resources.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.AspNet.Membership.OpenAuth.resources.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Providers.resources.dll">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>03/25/2019 14:42:18</publishTime>
+    </File>
+    <File Include="Check.aspx">
+      <publishTime>03/29/2019 15:16:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>03/25/2019 14:46:14</publishTime>
+    </File>
+    <File Include="Content/carts.css">
+      <publishTime>03/27/2019 17:22:48</publishTime>
+    </File>
+    <File Include="Content/demo.css">
+      <publishTime>03/25/2019 19:03:14</publishTime>
+    </File>
+    <File Include="Content/Details.css">
+      <publishTime>04/01/2019 19:24:44</publishTime>
+    </File>
+    <File Include="Content/DinBinDCss.css">
+      <publishTime>03/30/2019 15:08:52</publishTime>
+    </File>
+    <File Include="Content/font-awesome.min.css">
+      <publishTime>03/25/2019 14:46:14</publishTime>
+    </File>
+    <File Include="Content/jdc-side-panel.css">
+      <publishTime>03/30/2019 15:05:28</publishTime>
+    </File>
+    <File Include="Content/LRDefaultCss.css">
+      <publishTime>05/21/2019 17:16:42</publishTime>
+    </File>
+    <File Include="Content/MasterPage.css">
+      <publishTime>05/21/2019 22:01:38</publishTime>
+    </File>
+    <File Include="Content/normalize.css">
+      <publishTime>03/25/2019 14:46:14</publishTime>
+    </File>
+    <File Include="Content/reset.css">
+      <publishTime>03/27/2019 17:22:48</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>03/25/2019 14:46:14</publishTime>
+    </File>
+    <File Include="Content/zzsc.css">
+      <publishTime>03/25/2019 14:46:14</publishTime>
+    </File>
+    <File Include="css/bksystem.css">
+      <publishTime>04/03/2019 16:59:28</publishTime>
+    </File>
+    <File Include="css/ContextMenu.css">
+      <publishTime>05/21/2019 19:42:40</publishTime>
+    </File>
+    <File Include="css/iconfont.css">
+      <publishTime>04/03/2019 18:19:20</publishTime>
+    </File>
+    <File Include="css/loaders.css">
+      <publishTime>04/03/2019 16:59:28</publishTime>
+    </File>
+    <File Include="css/module.css">
+      <publishTime>04/03/2019 16:59:28</publishTime>
+    </File>
+    <File Include="css/pages.css">
+      <publishTime>04/03/2019 16:59:28</publishTime>
+    </File>
+    <File Include="css/PersonalCenter.css">
+      <publishTime>04/03/2019 18:19:22</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>04/03/2019 16:59:28</publishTime>
+    </File>
+    <File Include="css/stylees.css">
+      <publishTime>04/03/2019 18:20:58</publishTime>
+    </File>
+    <File Include="css/YuoInfo.css">
+      <publishTime>04/03/2019 18:19:28</publishTime>
+    </File>
+    <File Include="Details.aspx">
+      <publishTime>04/03/2019 00:03:24</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>03/25/2019 14:42:18</publishTime>
+    </File>
+    <File Include="FinBinGinZin.aspx">
+      <publishTime>04/02/2019 21:18:52</publishTime>
+    </File>
+    <File Include="FinBinShopping.aspx">
+      <publishTime>05/22/2019 19:37:50</publishTime>
+    </File>
+    <File Include="font/iconfont.css">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="font/iconfont.eot">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="font/iconfont.js">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="font/iconfont.svg">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="font/iconfont.ttf">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="font/iconfont.woff">
+      <publishTime>04/03/2019 16:31:56</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>03/25/2019 14:46:26</publishTime>
+    </File>
+    <File Include="fonts/jdcfont.eot">
+      <publishTime>03/30/2019 15:09:18</publishTime>
+    </File>
+    <File Include="fonts/jdcfont.ttf">
+      <publishTime>03/30/2019 15:09:18</publishTime>
+    </File>
+    <File Include="fonts/jdcfont.woff">
+      <publishTime>03/30/2019 15:09:18</publishTime>
+    </File>
+    <File Include="Frame/Bottom.aspx">
+      <publishTime>04/03/2019 18:22:26</publishTime>
+    </File>
+    <File Include="Frame/LeftFrame.aspx">
+      <publishTime>04/03/2019 18:28:28</publishTime>
+    </File>
+    <File Include="Frame/MainFrame.aspx">
+      <publishTime>04/03/2019 18:36:20</publishTime>
+    </File>
+    <File Include="Frame/TopFrame.aspx">
+      <publishTime>04/03/2019 19:39:40</publishTime>
+    </File>
+    <File Include="GeRen.aspx">
+      <publishTime>04/03/2019 19:04:46</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/25/2019 14:42:18</publishTime>
+    </File>
+    <File Include="iconfont/blacklist.aspx">
+      <publishTime>04/03/2019 16:46:26</publishTime>
+    </File>
+    <File Include="iconfont/goods_fenlei.aspx">
+      <publishTime>05/23/2019 15:14:32</publishTime>
+    </File>
+    <File Include="iconfont/goods_table.aspx">
+      <publishTime>04/03/2019 17:59:20</publishTime>
+    </File>
+    <File Include="iconfont/information_trade.aspx">
+      <publishTime>04/03/2019 16:46:26</publishTime>
+    </File>
+    <File Include="iconfont/order_status.aspx">
+      <publishTime>04/03/2019 16:46:28</publishTime>
+    </File>
+    <File Include="iconfont/userinfo.aspx">
+      <publishTime>04/03/2019 16:46:28</publishTime>
+    </File>
+    <File Include="iconfont/users.aspx">
+      <publishTime>04/03/2019 16:46:28</publishTime>
+    </File>
+    <File Include="Images/002.jpg">
+      <publishTime>04/03/2019 19:09:06</publishTime>
+    </File>
+    <File Include="Images/1.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/1001.jpg">
+      <publishTime>09/23/2019 15:28:30</publishTime>
+    </File>
+    <File Include="Images/1002.jpg">
+      <publishTime>03/27/2019 14:36:06</publishTime>
+    </File>
+    <File Include="Images/1003.jpg">
+      <publishTime>03/27/2019 14:36:16</publishTime>
+    </File>
+    <File Include="Images/1004.jpg">
+      <publishTime>03/27/2019 14:36:24</publishTime>
+    </File>
+    <File Include="Images/1005.jpg">
+      <publishTime>03/27/2019 14:36:30</publishTime>
+    </File>
+    <File Include="Images/1006.jpg">
+      <publishTime>03/27/2019 14:36:36</publishTime>
+    </File>
+    <File Include="Images/1007.jpg">
+      <publishTime>03/27/2019 14:36:44</publishTime>
+    </File>
+    <File Include="Images/1008.jpg">
+      <publishTime>03/27/2019 14:36:50</publishTime>
+    </File>
+    <File Include="Images/19031.jpg">
+      <publishTime>03/25/2019 19:56:16</publishTime>
+    </File>
+    <File Include="Images/19032.jpg">
+      <publishTime>03/25/2019 19:56:34</publishTime>
+    </File>
+    <File Include="Images/19033.jpg">
+      <publishTime>03/25/2019 19:56:42</publishTime>
+    </File>
+    <File Include="Images/19034.jpg">
+      <publishTime>03/25/2019 20:08:24</publishTime>
+    </File>
+    <File Include="Images/2.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/3.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/4.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/400001.jpg">
+      <publishTime>05/21/2019 19:25:22</publishTime>
+    </File>
+    <File Include="Images/5.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/banic.png">
+      <publishTime>03/25/2019 14:46:32</publishTime>
+    </File>
+    <File Include="Images/cart/ass.jpg">
+      <publishTime>03/27/2019 20:21:12</publishTime>
+    </File>
+    <File Include="Images/cart/cft.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/fk.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/g1.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/gdbank.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/helpicon.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/ie.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/item1.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/item2.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/jhbank.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/jt1.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/jt2.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/jtbank.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/nybank.jpg">
+      <publishTime>03/27/2019 20:21:14</publishTime>
+    </File>
+    <File Include="Images/cart/step1.jpg">
+      <publishTime>03/27/2019 20:21:16</publishTime>
+    </File>
+    <File Include="Images/cart/step2.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/Thumbs.db">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/tj.png">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/view1.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/view2.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/view3.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/view4.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/warn.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/xybank.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/zfb.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/zgbank.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/cart/zsbank.jpg">
+      <publishTime>03/27/2019 20:21:18</publishTime>
+    </File>
+    <File Include="Images/d.jpg">
+      <publishTime>04/01/2019 10:14:58</publishTime>
+    </File>
+    <File Include="Images/GinXin.png">
+      <publishTime>03/27/2019 14:18:04</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>03/27/2019 16:03:24</publishTime>
+    </File>
+    <File Include="Images/logo11.png">
+      <publishTime>04/03/2019 19:39:08</publishTime>
+    </File>
+    <File Include="Images/mark.png">
+      <publishTime>03/27/2019 17:23:28</publishTime>
+    </File>
+    <File Include="Images/MDMJY.png">
+      <publishTime>03/26/2019 22:15:02</publishTime>
+    </File>
+    <File Include="Images/Money.png">
+      <publishTime>03/27/2019 14:14:44</publishTime>
+    </File>
+    <File Include="Images/no_doc.jpg">
+      <publishTime>04/03/2019 19:09:06</publishTime>
+    </File>
+    <File Include="Images/proddetlIcon.gif">
+      <publishTime>04/01/2019 17:02:46</publishTime>
+    </File>
+    <File Include="Images/qrcode.jpg">
+      <publishTime>03/30/2019 15:06:02</publishTime>
+    </File>
+    <File Include="Images/qr_img.png">
+      <publishTime>03/30/2019 15:06:02</publishTime>
+    </File>
+    <File Include="Images/reg_bg.jpg">
+      <publishTime>05/21/2019 17:12:28</publishTime>
+    </File>
+    <File Include="Images/XXJY.png">
+      <publishTime>03/26/2019 22:16:22</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>09/19/2019 16:31:44</publishTime>
+    </File>
+    <File Include="js/BKframe.js">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="js/bootstrap.bundle.min.js">
+      <publishTime>05/22/2019 15:26:24</publishTime>
+    </File>
+    <File Include="js/common.js">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="js/css3-mediaqueries.js">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="js/dist/chart/bar.js">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="js/dist/chart/chord.js">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="js/dist/chart/eventRiver.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/force.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/funnel.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/gauge.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/heatmap.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/k.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/line.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/map.js">
+      <publishTime>04/03/2019 17:01:36</publishTime>
+    </File>
+    <File Include="js/dist/chart/pie.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/radar.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/scatter.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/tree.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/treemap.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/venn.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/chart/wordCloud.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/echarts-all.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/echarts.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/theme/default.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/theme/infographic.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/dist/theme/macarons.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/html5shiv.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/HUpages.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/jquery-3.3.1.min.js">
+      <publishTime>05/22/2019 15:26:26</publishTime>
+    </File>
+    <File Include="js/jquery.cookie.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/jquery.nicescroll.js">
+      <publishTime>04/03/2019 17:01:38</publishTime>
+    </File>
+    <File Include="js/jquery.scrollbar.min.js">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/extend/layer.ext.js">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/layer.js">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/icon-ext.png">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/icon.png">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-0.gif">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-1.gif">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/default/loading-2.gif">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/layer.css">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/layer/skin/layer.ext.css">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="js/template.js">
+      <publishTime>04/03/2019 17:01:40</publishTime>
+    </File>
+    <File Include="LRDefault.aspx">
+      <publishTime>05/21/2019 17:18:12</publishTime>
+    </File>
+    <File Include="MasterPage.master">
+      <publishTime>05/28/2019 10:31:22</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/25/2019 14:42:48</publishTime>
+    </File>
+    <File Include="Product.aspx">
+      <publishTime>05/23/2019 15:19:26</publishTime>
+    </File>
+    <File Include="Product/Bangzhu.aspx">
+      <publishTime>04/03/2019 18:37:22</publishTime>
+    </File>
+    <File Include="Product/GeRenInfo.aspx">
+      <publishTime>04/03/2019 19:38:16</publishTime>
+    </File>
+    <File Include="Product/Login.aspx">
+      <publishTime>04/03/2019 18:36:06</publishTime>
+    </File>
+    <File Include="Product/PersonalData.aspx">
+      <publishTime>04/03/2019 19:30:52</publishTime>
+    </File>
+    <File Include="Product/PersonalOrder.aspx">
+      <publishTime>04/03/2019 18:37:14</publishTime>
+    </File>
+    <File Include="Product/Replay.aspx">
+      <publishTime>04/03/2019 18:37:20</publishTime>
+    </File>
+    <File Include="Scripts/carts.js">
+      <publishTime>03/27/2019 17:20:58</publishTime>
+    </File>
+    <File Include="Scripts/IndexCon.js">
+      <publishTime>05/21/2019 19:42:56</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.11.0.min.js">
+      <publishTime>03/25/2019 14:46:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>03/25/2019 14:42:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>03/25/2019 14:42:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.min.js">
+      <publishTime>03/27/2019 17:20:58</publishTime>
+    </File>
+    <File Include="Scripts/LRDefaultJs.js">
+      <publishTime>03/29/2019 21:09:56</publishTime>
+    </File>
+    <File Include="Shopping.aspx">
+      <publishTime>03/29/2019 15:36:24</publishTime>
+    </File>
+    <File Include="skin/black/skin.css">
+      <publishTime>04/03/2019 17:01:30</publishTime>
+    </File>
+    <File Include="skin/blue/skin.css">
+      <publishTime>04/03/2019 17:01:32</publishTime>
+    </File>
+    <File Include="skin/gray/skin.css">
+      <publishTime>04/03/2019 17:01:32</publishTime>
+    </File>
+    <File Include="skin/green/skin.css">
+      <publishTime>04/03/2019 17:01:32</publishTime>
+    </File>
+    <File Include="skin/purple/skin.css">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="skin/red/skin.css">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="skin/white/skin.css">
+      <publishTime>04/03/2019 17:01:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/12/2019 17:39:24</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
